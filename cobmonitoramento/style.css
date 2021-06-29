@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FFF;
+    display: grid;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+.disco {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.discos {
+    text-align: center;
+}
+
+.disco h1:nth-child(1), .disco h1:nth-child(2) {
+    border-right: 2px solid black;
+}
+
+.grid-section {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    padding: 15px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.grid-container {
+    display: grid;
+    border: 2px solid rgb(34, 34, 34);
+    width: 337px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
+}
+
+.scroll-lista {
+    list-style: none;
+    height: 120px;
+    overflow-y: scroll;
+    margin: 10px 10px 10px 0;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(3, 1fr)
+}
+
+.ultimo {
+    margin-left: 40px;
+}
+
+.grid-container p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.grid-container p::after {
+    margin-left: 20px;
+}
+
+
+.grid-container h1 {
+    border-bottom: 2px solid black;
+    padding: 10px 0 10px 0;
+}
