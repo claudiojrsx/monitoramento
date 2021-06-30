@@ -12,7 +12,8 @@ body {
 }
 
 h1 {
-    font-size: 18px;
+    font-size: 16px;
+    margin: 10px 0 10px 10px;
 }
 
 .disco {
@@ -48,11 +49,19 @@ h1 {
 .scroll-lista {
     list-style: none;
     height: 120px;
-    overflow-y: scroll;
-    margin: 10px 10px 10px 0;
+    overflow-y: auto;
+    margin: 10px 5px 10px 0;
     display: grid;
     padding: 10px;
-    grid-template-columns: repeat(3, 1fr)
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.primeiro {
+    margin-right: 15px;
+}
+
+.penultimo {
+    margin-left: 25px;
 }
 
 .ultimo {
@@ -64,12 +73,7 @@ h1 {
     text-align: center;
 }
 
-.grid-container p::after {
-    margin-left: 20px;
-}
-
-
-.grid-container h1 {
-    border-bottom: 2px solid black;
-    padding: 10px 0 10px 0;
+.linha {
+    border: 1px solid black;
+    background: black;
 }
